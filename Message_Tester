@@ -1,0 +1,12 @@
+#Just testing to see if the message portion of the program works.
+
+import random
+
+pieces1 = []
+pieces2 = []
+
+def main():
+    print(f"{random.choice(pieces1)} {random.choice(pieces2)}\n\t- Love Gabe")
+
+
+main()
