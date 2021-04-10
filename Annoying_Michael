@@ -1,0 +1,17 @@
+import requests
+import random
+
+pieces1 = [] # I removed everything from the lists because it amuses me to be vulgar with my friends
+pieces2 = []
+
+def main():
+    annoy = requests.post('https://textbelt.com/text',
+                          {'phone' : '<phone number goes here>',
+                           'message' : f"{random.choice(pieces1)} {random.choice(pieces2)}\n\t- Love Gabe",
+                           'key' : 'textbelt'})
+
+    print(annoy.json())
+
+    pause = input("Press any key to quit...")
+
+main()
